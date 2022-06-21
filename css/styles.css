@@ -837,9 +837,10 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
+  padding: 40px;
 
-  width: 500px;
-  height: 600px;
+  width: 528px;
+  height: 581px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -863,4 +864,41 @@ ul {
   border-radius: 50%;
 
   cursor: pointer;
+}
+
+.modal-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+
+  margin-bottom: 12px;
+}
+
+.modal-name,
+.modal-tel,
+.modal-email {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.modal-label-name,
+.modal-label-tel,
+.modal-label-email {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: #757575;
+
+  padding-bottom: 4px;
 }
