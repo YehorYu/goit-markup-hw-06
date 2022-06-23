@@ -649,6 +649,45 @@ ul {
   margin-bottom: 0;
 }
 
+.footer-cos-input {
+  display: block;
+
+  margin-left: 94px;
+}
+
+.footer-text {
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.footer-text::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+. .footer-btn {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
 /* ------------------------PORTFOLIO---------------------- */
 
 .section-hero {
@@ -877,16 +916,13 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--tittle-text-color);
 
   margin-bottom: 12px;
 }
 
-.modal-form-field {
-  width: 100%;
-}
-
-.modal-field {
+.modal-item:not(:first-child) {
+  margin-top: 10px;
 }
 
 .modal-name,
@@ -900,7 +936,8 @@ ul {
 
 .modal-label-name,
 .modal-label-tel,
-.modal-label-email {
+.modal-label-email,
+.modal-label-comment {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -908,9 +945,16 @@ ul {
   line-height: 1.16;
   letter-spacing: 0.01em;
 
-  color: #757575;
+  color: var(--primery-text-color);
 
   padding-bottom: 4px;
+  margin-top: 10px;
+  display: block;
+}
+
+.modal-name:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
 }
 
 .modal-comment-text {
@@ -922,4 +966,37 @@ ul {
   border-radius: 4px;
 
   resize: none;
+}
+
+.modal-comment-text::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+. .modal-label-chb {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--primery-text-color);
+}
+
+.input-wrap {
+  position: relative;
+  display: flex;
+}
+
+.modal-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
